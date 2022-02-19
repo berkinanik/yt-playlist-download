@@ -51,7 +51,7 @@ You should be good to go.
 ## Usage
 Open **``main.py``** and follow the commented instructions to download your youtube videos
 
-If you notice that tool stopped working, most probably it is because of *``pytube``* requires a newer version.
+If you notice that tool stopped working, most probably it is because of *`pytube`* requires a newer version.
 
 To fix this, activate the venv and
 

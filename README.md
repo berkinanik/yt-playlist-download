@@ -12,7 +12,7 @@ Python tool to download YouTube videos using [pytube](https://github.com/pytube/
 - Download 1080p or higher resolutions with audio *(pytube provides at most 720p videos with audio)*.
 
 ## Installation
-This tool requires an installation of Python 3.6 or greater and pip. (You should have pip already if you python3, it is typically bundled with python)
+This tool requires an installation of Python 3.6 or greater and pip. (You should have pip already if you have python3, it is typically bundled with python)
 
 If you don't have python install it (Python 3.6 or higher): [python installations](https://python.org/downloads).
 

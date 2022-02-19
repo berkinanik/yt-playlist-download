@@ -25,23 +25,23 @@ $ cd yt-downloader
 ```
 If you want a virtual environment and don't want to use global python and packages to run this tool, you need a virtual python env.
 
-### Use with a virtual environment
+### Using with a virtual environment
 #### Create a virtual env
 ```bash
 $ python -m venv venv
 ```
 #### Activate the virtual env
-Using MacOS or Linux:
+MacOS or Linux:
 ```bash
 $ source venv/bin/activate
 ```
-Using Windows:
+Windows:
 ```bash
 $ venv\Scripts\activate.bat
 ```
 If you have succesfully installed and activated venv you should see ``(venv)`` in front of current directory in the bash line
 
-#### Install required python packages
+### Install required python packages
 ```bash
 $ pip3 install -r requirements.txt
 ```

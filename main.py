@@ -39,7 +39,7 @@ def main():
 
     fileNamePrefix = "file-name-prefix"
     # example
-    # fileNamePrefix = "ee302-2020f"
+    # fileNamePrefix = "ee302-2020s"
 
     # EXTRACT YOUTUBE LINKS FROM PDF
     # you can extract youtube links from pdf and you the array returned to download youtube videos
@@ -88,12 +88,12 @@ def main():
             + f"-{'0'+str(count) if count < 10 else count}-"
             + result.title.lower()
             .replace("metu", "") #remove unwanted words
-            .replace("2021", "") #or numbers
+            .replace("2020", "") #or numbers
             .replace("odtu", "metu") #or replace words
             #examples
             # .replace("ee302", "")
             # .replace("feedback systems", "")
-            # .replace("(Lectures on Feedback Control Systems)".lower(), "")
+            # .replace("- (Lectures on Feedback Control Systems)".lower(), "")
             # .replace("spring 2021", "")
             + ".mp4"
         )

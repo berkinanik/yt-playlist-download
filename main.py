@@ -16,9 +16,9 @@ def main():
 
     videos = Playlist("https://www.youtube.com/playlist?list=[playlist-ID]")
     # example
-    videos = Playlist(
-        "https://www.youtube.com/playlist?list=PLEboAksnoN7UtpR7gJzCsZFCPbOo3ur0s"
-    )
+    # videos = Playlist(
+    #     "https://www.youtube.com/playlist?list=PLEboAksnoN7UtpR7gJzCsZFCPbOo3ur0s"
+    # )
 
     # download path of videos to be downloaded to
 
@@ -28,7 +28,7 @@ def main():
 
     downloadPath = "C:\\Path\\To\\Your\\Download\\Folder\\"
     # example
-    downloadPath = "C:\\Users\\Berkin\\Desktop\\YoutubeDownloads\\ee302-vids\\"
+    # downloadPath = "C:\\Users\\Berkin\\Desktop\\YoutubeDownloads\\ee302-vids\\"
 
     # use following line for macOS or linux
 
@@ -39,7 +39,7 @@ def main():
 
     fileNamePrefix = "file-name-prefix"
     # example
-    fileNamePrefix = "ee302-2020f"
+    # fileNamePrefix = "ee302-2020f"
 
     # EXTRACT YOUTUBE LINKS FROM PDF
     # you can extract youtube links from pdf and you the array returned to download youtube videos
@@ -87,10 +87,14 @@ def main():
             fileNamePrefix
             + f"-{'0'+str(count) if count < 10 else count}-"
             + result.title.lower()
-            .replace("ee302", "")
-            .replace("feedback systems", "")
-            .replace("(Lectures on Feedback Control Systems)".lower(), "")
-            .replace("spring 2021", "")
+            .replace("metu", "") #remove unwanted words
+            .replace("2021", "") #or numbers
+            .replace("odtu", "metu") #or replace words
+            #examples
+            # .replace("ee302", "")
+            # .replace("feedback systems", "")
+            # .replace("(Lectures on Feedback Control Systems)".lower(), "")
+            # .replace("spring 2021", "")
             + ".mp4"
         )
         invalidChars = '<>:;_,"/\|?* '

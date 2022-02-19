@@ -1,4 +1,4 @@
-# yt-playlist-download
+# yt-playlist-downloader
 Python tool to download YouTube videos using [pytube](https://github.com/pytube/pytube).
 
 ### Things you can do

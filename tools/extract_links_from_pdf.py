@@ -16,6 +16,8 @@ def extractLinksFromPDF(pdfFile):
     for page in range(pages):
         pageSliced = PDF.getPage(page)
         pageObject = pageSliced.getObject()
+        if pageObject is None:
+            continue
         if key in pageObject.keys():
             ann = pageObject[key]
             for a in ann:
@@ -26,5 +28,5 @@ def extractLinksFromPDF(pdfFile):
     pattern = re.compile(
         "^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
     )
-    
+
     return [url for url in urls if pattern.match(url)]
